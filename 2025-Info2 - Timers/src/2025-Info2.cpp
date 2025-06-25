@@ -21,6 +21,8 @@ Gpio LED_ROJO(PIN_LED_ROJO, OUTPUT);
 Gpio LED_AZUL(PIN_LED_AZUL, OUTPUT);
 Gpio LED_VERDE(PIN_LED_VERDE, OUTPUT);
 
+GPIOF PULSADOR(PIN_PULSADOR);
+
 int main(void) {
 
 	// Inicializacion
@@ -29,6 +31,11 @@ int main(void) {
     while(1) {
 
     	// Procesamiento
+
+    	if(PULSADOR.Get() == 0)
+    	{
+    		LED_VERDE.Set(1);
+    	}
 
     }
     return 0 ;

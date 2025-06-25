@@ -14,6 +14,13 @@ void Gpio::Set(uint32_t state){
 		GPIO->CLR[port] |= (1 << pin);
 }
 
+uint32_t Gpio::Get(void){
+	if(GPIO->PIN[port] & (1 << pin))
+		return 1;
+	else
+		return 0;
+}
+
 void Gpio::Dir(uint32_t _dir){
 	dir = _dir;
 
