@@ -1,3 +1,0 @@
-../src/GPIO_Driver/GPIO.cpp:10:6:void Gpio::Set(uint32_t)	16	static
-../src/GPIO_Driver/GPIO.cpp:17:6:void Gpio::Dir(uint32_t)	16	static
-../src/GPIO_Driver/GPIO.cpp:26:1:Gpio::Gpio(uint32_t, uint32_t, uint32_t)	24	static

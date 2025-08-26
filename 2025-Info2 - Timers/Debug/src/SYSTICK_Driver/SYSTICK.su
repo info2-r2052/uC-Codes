@@ -1,4 +1,0 @@
-../src/SYSTICK_Driver/SYSTICK.cpp:12:1:SYSTICK::SYSTICK(uint32_t)	24	static
-../src/SYSTICK_Driver/SYSTICK.cpp:26:6:void SysTick_Handler()	8	static
-../src/SYSTICK_Driver/SYSTICK.cpp:32:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../src/SYSTICK_Driver/SYSTICK.cpp:32:1:cpp)	8	static
