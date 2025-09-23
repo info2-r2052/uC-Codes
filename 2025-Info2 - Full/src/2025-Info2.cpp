@@ -25,6 +25,11 @@ GPIOF PULSADOR(PIN_PULSADOR);
 
 UART0	Uart0(9600);
 
+uint16_t Temperatura1 = 0;
+uint16_t Temperatura2 =0;
+
+uint8_t Buffer[100];
+
 int main(void) {
 
 	// Inicializacion
@@ -38,6 +43,9 @@ int main(void) {
     	{
     		LED_VERDE.Set(1);
     	}
+
+
+    	//Serial_Analizar_RX();
 
     }
     return 0 ;
@@ -54,7 +62,27 @@ void Led(void){
 
 	LED_ROJO.Set(stateLed);
 
-	Uart0.Send((uint8_t*)"Hola", 0);
+
+
+
+
+
+
+
+
+	Temperatura1++;
+	Temperatura2+=2;
+
+	sprintf((char*)Buffer, "Temp1=%05d , Temp2=%05d\r\n", Temperatura1, Temperatura2);
+
+	Uart0.Send((uint8_t*)Buffer, 0);
+
+/*	Buffer[0] = (Temperatura1 >> 8) & 0xff;
+	Buffer[1] = Temperatura1 & 0xff;
+	Buffer[2] = (Temperatura2 >> 8) & 0xff;
+	Buffer[3] = Temperatura2 & 0xff;
+
+	Uart0.Send((uint8_t*)Buffer, 4);*/
 }
 
 

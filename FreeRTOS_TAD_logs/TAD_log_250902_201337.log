@@ -1,0 +1,5 @@
+"Task Aware Debugger for GDB" version 11.4.0 (202108190644)
+(c) 2016-2021 NXP Semiconductors, Inc.
+==================================
+20:13:12.325 INFO: [TadModel] DSF session ID 0 has started.
+20:13:37.547 INFO: [TadModel] DSF session ID 0 has ended.

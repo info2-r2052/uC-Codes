@@ -8,6 +8,7 @@ S_SRCS += \
 
 CPP_SRCS += \
 ../src/2025-Info2.cpp \
+../src/Analisis_Serial.cpp \
 ../src/cr_cpp_config.cpp \
 ../src/cr_startup_lpc84x.cpp 
 
@@ -17,6 +18,7 @@ C_SRCS += \
 
 OBJS += \
 ./src/2025-Info2.o \
+./src/Analisis_Serial.o \
 ./src/aeabi_romdiv_patch.o \
 ./src/cr_cpp_config.o \
 ./src/cr_startup_lpc84x.o \
@@ -25,6 +27,7 @@ OBJS += \
 
 CPP_DEPS += \
 ./src/2025-Info2.d \
+./src/Analisis_Serial.d \
 ./src/cr_cpp_config.d \
 ./src/cr_startup_lpc84x.d 
 
