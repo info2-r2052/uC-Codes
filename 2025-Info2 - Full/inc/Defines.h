@@ -12,5 +12,7 @@
 #include "CALLBACK.h"
 #include "TIMER.h"
 #include "GPIOF.h"
+#include "DRIVER_LCD16X2.h"
+#include "DRIVER_ADC.h"
 #include "UART0.h"
 

@@ -12,9 +12,11 @@ RM := rm -rf
 -include src/UART_Driver/subdir.mk
 -include src/TIMERS_Driver/subdir.mk
 -include src/SYSTICK_Driver/subdir.mk
+-include src/LCD16X2_Driver/subdir.mk
 -include src/GPIO_Driver/subdir.mk
 -include src/GPIOO_Driver/subdir.mk
 -include src/GPIOF_Driver/subdir.mk
+-include src/ADC_Driver/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk

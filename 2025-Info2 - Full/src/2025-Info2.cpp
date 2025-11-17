@@ -33,7 +33,9 @@ uint8_t Buffer[100];
 int main(void) {
 
 	// Inicializacion
+	LCD_Inicializar();
 
+	LCD_Display((uint8_t *)"Hola", 0, 0);
 
     while(1) {
 

@@ -25,9 +25,11 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 src \
+src/ADC_Driver \
 src/GPIOF_Driver \
 src/GPIOO_Driver \
 src/GPIO_Driver \
+src/LCD16X2_Driver \
 src/SYSTICK_Driver \
 src/TIMERS_Driver \
 src/UART_Driver \
